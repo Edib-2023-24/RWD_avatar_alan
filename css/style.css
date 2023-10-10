@@ -16,30 +16,59 @@
 
 /* Colores */
 *{
+
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
 }
 
-body{
-  height: 100vh;
+body {
+
   display: flex;
   justify-content: center;
   align-items: center;
-
+  height: 100vh;
+  background-color: #F1F1F1F1;
 }
 
-img{
-  width: 300px;
+img {
+
   height: 300px;
-  border-radius: 50%;
+  width: 300px;
+  border-radius: 100%;
+
 }
 
-h1{
+h1 {
+
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
 }
-h1 span{
+
+h1 span {
+
   font-weight: 100;
+
 }
-/* ******************************** */
+
+/* Desktop */
+
+@media only screen and (min-width: 501px) and (max-width: 1920px) {
+  h1{
+    display: none;
+  }
+
+  img::after{
+    content: "Andrés Corrillo";
+    position: relative;
+    left: 410px;
+    top: 200px;
+    line-height: 1;
+  }
+}
+
